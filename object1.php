@@ -1,41 +1,37 @@
 <?php
 
-class Kendaraan {
-    var$warna;
-    var$jenis;
-    var$bahan_bakar;
+Class Kendaraan { 
+    var $warna; 
+    var $jenis;
+    var $bahan_bakar; 
     public function berjalan_maju(){
-        echo 'saya bisa berjalan maju';
-
+       echo 'saya bisa berjalan maju';
     }
 
     public function berjalan_belok(){
         echo 'saya bisa berjalan belok';
-
     }
 
-    public function berjalan_mundur(){
+    public function mundur(){
         echo 'saya bisa berjalan mundur';
-    }
+     } 
 
 }
 
-class MahlukHidup{
-    var$pernapasan = 'paru-paru';
+Class MakhlukHidup {
+    var $pernapasan = 'Paru-paru';
 
-    public function bernafas(){
-        echo 'saya bernafas dengan '.$this->pernapasan;
-    
+    public function bernafas(){  
+        echo 'saya bernapas dengan '.$this->pernapasan;
     }
 
     public function makan(){
-        echo 'saya makan nasi '.$this->pernapasan;
+        echo 'saya makan nasi';
     }
-
 }
-$mobil = new kendaraan ();
-//echo $mobil->mundur;
-$manusia = new MahlukHidup();
-$manusia->bernafas ();
+
+$mobil = new Kendaraan(); 
+$manusia = new MakhlukHidup();
+$manusia->bernafas();
 
 ?>
