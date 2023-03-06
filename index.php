@@ -1,3 +1,3 @@
 <?php
-echo "Niken add";
+echo "Niken dd";
 ?>
